@@ -3,12 +3,20 @@
 ## Variables and Data Types
 
 ```javascript
-// Variables
-let variable = "value";    // block-scoped
-const constant = "fixed";  // immutable reference
-var oldStyle = "value";    // function-scoped (avoid)
+/*
+Variables
+- let: block-scoped
+- const: immutable reference
+- var: function-scoped (avoid)
+*/
+let variable = "value";
+const constant = "fixed";
+var oldStyle = "value";
 
-// Data Types
+/*
+Data Types
+- string, number, float, boolean, null, undefined, symbol
+*/
 let string = "text";
 let number = 42;
 let float = 3.14;
@@ -99,10 +107,22 @@ let trimmed = text.trim();
 ### Array Operations
 ```javascript
 let arr = [1, 2, 3];
-arr.push(4);          // Add to end
-arr.pop();            // Remove from end
-arr.unshift(0);       // Add to start
-arr.shift();          // Remove from start
+/*
+Add to end
+*/
+arr.push(4);
+/*
+Remove from end
+*/
+arr.pop();
+/*
+Add to start
+*/
+arr.unshift(0);
+/*
+Remove from start
+*/
+arr.shift();
 let sliced = arr.slice(1, 3);
 arr.forEach(item => console.log(item));
 let mapped = arr.map(x => x * 2);
