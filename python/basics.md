@@ -70,7 +70,10 @@ my_dict = {"key": "value", "number": 42}
 # Sets
 my_set = {1, 2, 3}
 
-#In Python, a set is an unordered collection of unique elements. Sets are useful for storing items without duplicates and for performing mathematical set operations like union, intersection, and difference.
+#In Python, a set is an unordered collection of unique elements. 
+# Sets are useful for storing items without duplicates and for 
+# performing mathematical set operations like union, intersection, 
+# and difference.
 
 # Sets are:
 # Unordered: The elements have no specific order.
@@ -143,6 +146,18 @@ dict["version"] = 3.9
 value = dict.get("name")
 keys = dict.keys()
 values = dict.values()
+
+# Looping through keys
+for key in dict:
+    print(key)
+
+# Looping through values
+for value in dict.values():
+    print(value)
+
+# Looping through both keys and values
+for key, value in dict.items():
+    print(key, value)
 ```
 
 ## Error Handling
